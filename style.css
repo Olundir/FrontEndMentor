@@ -1,0 +1,290 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* ----------------------------------- */
+
+body {
+  margin: 0px;
+  background-color: hsl(233, 47%, 7%);
+  font-size: 15px;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  margin: 10% 20%;
+  max-width: 1440px;
+  background-color: hsl(244, 38%, 16%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2%;
+}
+
+#cardImage {
+  max-width: 50%;
+  border-radius: 0 2% 2% 0;
+}
+
+.leftSide {
+  margin-left: 5%;
+  margin-right: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#mainQuote {
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+}
+.innerColor {
+  color: hsl(277, 64%, 61%);
+}
+.insideText {
+  color: hsla(0, 0%, 100%, 0.75);
+  padding: 12.5% 5% 12.5% 0;
+  font-size: 1.2rem;
+  font-family: "Lexend Deca", sans-serif;
+  align-items: stretch;
+  justify-content: stretch;
+}
+.statistics {
+  color: hsla(0, 0%, 100%, 0.6);
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 0.8rem;
+}
+.bigNum {
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: bold;
+}
+
+@media (max-width: 1500px) {
+  #mainQuote {
+    font-size: 1.5rem;
+  }
+
+  .insideText {
+    font-size: 1rem;
+  }
+  .statistics {
+    font-size: 0.7rem;
+  }
+  .bigNum {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 1250px) {
+  #mainQuote {
+    font-size: 1.3rem;
+  }
+
+  .insideText {
+    font-size: 0.9rem;
+  }
+  .statistics {
+    font-size: 0.6rem;
+  }
+  .bigNum {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 1020px) {
+  #mainQuote {
+    font-size: 1.3rem;
+  }
+
+  .insideText {
+    font-size: 0.8rem;
+    padding: 7% 5% 7% 0;
+  }
+  .statistics {
+    font-size: 0.6rem;
+  }
+  .bigNum {
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 950px) {
+  body {
+    margin: 0;
+  }
+
+  .card {
+    max-width: 1440px;
+    background-color: hsl(244, 38%, 16%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 0;
+    margin: 0;
+  }
+  #cardImage {
+    max-width: 100%;
+    border-radius: 0;
+  }
+  /* .leftSide {
+    margin-left: 5%;
+    margin-right: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  } */
+
+  #mainQuote {
+    font-size: 2rem;
+    padding-top: 12.5%;
+  }
+
+  .insideText {
+    font-size: 1.2rem;
+    padding: 10% 5% 15% 0;
+  }
+  .statistics {
+    font-size: 0.8rem;
+    padding-bottom: 12.5%;
+  }
+  .bigNum {
+    font-size: 1.6rem;
+  }
+}
